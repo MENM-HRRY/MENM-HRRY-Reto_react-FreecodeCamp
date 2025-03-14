@@ -1,0 +1,155 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #0a0b1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.palindrome-checker {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Header con ícono */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.icon-alert {
+    color: #9333ea;
+    flex-shrink: 0;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Sección de entrada */
+.input-section {
+    margin-bottom: 2rem;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#text-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #4a148c;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#text-input:focus {
+    border-color: #7b1fa2;
+    box-shadow: 0 0 0 2px rgba(123, 31, 162, 0.3);
+}
+
+#text-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#check-btn {
+    padding: 0.75rem 2rem;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#check-btn:hover {
+    background: #7c4dff;
+}
+
+/* Resultado */
+#result {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+#result.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#result.success {
+    background: rgba(76, 175, 80, 0.2);
+    color: #81c784;
+}
+
+#result.error {
+    background: rgba(244, 67, 54, 0.2);
+    color: #e57373;
+}
+
+/* Caja de información */
+.info-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 150, 136, 0.1);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.bulb {
+    font-size: 1.5rem;
+}
+
+.info-box p {
+    color: #80cbc4;
+    line-height: 1.5;
+}
+
+.info-box em {
+    font-style: italic;
+    color: #4db6ac;
+}

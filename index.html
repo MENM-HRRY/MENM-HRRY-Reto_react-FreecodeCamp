@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Palíndromos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="palindrome-checker">
+            <div class="header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-alert"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+                <h1>Verificador de Palíndromos</h1>
+            </div>
+
+            <div class="input-section">
+                <label for="text-input">Ingrese una palabra o frase:</label>
+                <div class="input-group">
+                    <input type="text" id="text-input" placeholder="Escribe algo...">
+                    <button id="check-btn"><em>Verificar palíndromo</em></button>
+                </div>
+            </div>
+
+            <div id="result"></div>
+
+            <div class="info-box">
+                <span class="bulb">💡</span>
+                <p>
+                    Un <em>palíndromo</em> es una palabra o frase que se lee igual hacia adelante y hacia atrás, ignorando signos de puntuación, acentos, mayúsculas y espacios..
+               </p>
+            </div>
+            <div class="ejemplos">
+                <p><strong>Ejemplos de palíndromos:</strong></p>
+                <p><li>"A man, a plan, a canal. Panama"</p></li>
+                <p><li>"Я иду с мечем судия"</p></li>
+                <p><li>"人人为我，我为人人"</p></li>
+                <p><li>"Tu l’as trop écrasé, César, ce port-salut"</p></li>
+                <p><li>"Anita lava la tina"</p></li>
+                <p><li>"زرتشت رز"</p></li>
+                <p><li>"Die Liebe ist Sieger, stets rege ist sie bei Leid"</p></li>
+                <p><li>"BY-323-YB"</p></li>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
